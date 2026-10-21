@@ -1,0 +1,13 @@
+PASS unaccepted report refuses packaging without creating a ZIP
+PASS accepted fixture contains exactly the allowlist and preserves executable SHA256
+PASS existing same-name ZIP is replaced only after the new archive verifies
+PASS unknown missing unanchored and ambiguous acceptance states preserve the previous ZIP
+PASS stale executable hash in TEST-REPORT.md preserves the previous ZIP
+PASS stale executable hash in tests\real-verification.log preserves the previous ZIP
+PASS stale executable hash in tests\validation-current.log preserves the previous ZIP
+PASS missing report executable hash is rejected without replacing the previous ZIP
+PASS duplicate real-verification executable hashes preserve the previous ZIP
+PASS malformed validation executable hash preserves the previous ZIP
+PASS missing required source preserves the previous ZIP and leaves no temporary archive
+PASS source path validation rejects traversal outside the selected project directory
+PACKAGE SELFTEST RESULT 12 passed; fixture and log: C:\Users\lenovo\AppData\Local\Temp\study-helper-package-tests-2ea3f42bdb4748729868d2de3c7abd7b

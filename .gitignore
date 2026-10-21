@@ -1,0 +1,29 @@
+# Build outputs and release archives
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.zip
+
+# Local runtime logs; retain the published validation evidence
+/logs/
+*.log
+!/tests/validation-current.log
+!/tests/real-verification.log
+!/tests/package-selftest.log
+
+# Local desktop diagnostics and temporary probe results
+/live-*.txt
+/probe-*.txt
+/pause-*-result.txt
+/tests/live-*.txt
+/tests/*-results.txt
+/preview.png
+
+# Per-user IDE and Windows files
+.vs/
+*.user
+*.suo
+Thumbs.db
+Desktop.ini

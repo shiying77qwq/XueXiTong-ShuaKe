@@ -1,0 +1,76 @@
+﻿EXE SHA256: FD6DC7D686B5A334F5030949535C41F24F020EF92A78E541C9ECA33823B942D7
+STATUS: PASS
+SCOPE: 2026-10-21 local Windows cxstudy, 国家安全教育 video playback and switching only.
+All following production runs used the same unchanged deployed executable. No seek, speed change, quiz or synthetic progress requests.
+
+[live-v03-transition-01.txt]
+17:36:53  OBSERVE：更好统筹发展和安全的途径和方法；进度 --:-- / --:--；任务 Incomplete；播放中 False；任务点 1；播放器 1
+17:36:53  验证起点：3.3 更好统筹发展和安全的途径和方法。将等待真实完成标记，并只验证一次程序切换。
+17:36:54  HIT SELECT：target=播放视频; point=1363,900; attempt=1/3; strict=true
+17:36:54  ACTION INPUT：按钮 Invoke；播放视频
+17:36:55  OBSERVE：更好统筹发展和安全的途径和方法；进度 0:00 / 22:27；任务 Incomplete；播放中 True；任务点 1；播放器 1
+17:37:06  OBSERVE：更好统筹发展和安全的途径和方法；进度 0:11 / 22:27；任务 Incomplete；播放中 True；任务点 1；播放器 1
+17:49:19  OBSERVE：更好统筹发展和安全的途径和方法；进度 12:24 / 22:27；任务 Incomplete；播放中 True；任务点 1；播放器 1
+17:59:02  已确认完成 3.3 更好统筹发展和安全的途径和方法；本次新完成 1 段。
+17:59:04  OBSERVE：更好统筹发展和安全的途径和方法；进度 22:08 / 22:27；任务 Complete；播放中 True；任务点 1；播放器 1
+17:59:04  HIT SELECT：target=4.1 坚持以人民安全为宗旨的科学内涵; point=1946,1135; attempt=1/3; strict=true
+17:59:05  HIT CONFIRM：phase=after-mouse; target=4.1 坚持以人民安全为宗旨的科学内涵; point=1946,1135; strict=true
+17:59:05  ACTION INPUT：已核验鼠标单击；4.1 坚持以人民安全为宗旨的科学内涵
+17:59:05  ACTION：程序已点击下一视频目录项“4.1 坚持以人民安全为宗旨的科学内涵”；等待播放进度证据。
+17:59:07  OBSERVE：坚持以人民安全为宗旨的科学内涵；进度 --:-- / --:--；任务 Incomplete；播放中 False；任务点 1；播放器 1
+17:59:10  OBSERVE：坚持以人民安全为宗旨的科学内涵；进度 --:-- / --:--；任务 Incomplete；播放中 False；任务点 1；播放器 1
+17:59:10  FRESH：连续两次完整读取已确认目标未完成任务与播放器重新加载；等待实际播放进度。
+17:59:11  HIT SELECT：target=播放视频; point=1363,900; attempt=1/3; strict=true
+17:59:11  ACTION INPUT：按钮 Invoke；播放视频
+17:59:12  OBSERVE：坚持以人民安全为宗旨的科学内涵；进度 0:00 / 12:43；任务 Incomplete；播放中 True；任务点 1；播放器 1
+17:59:23  OBSERVE：坚持以人民安全为宗旨的科学内涵；进度 0:11 / 12:43；任务 Incomplete；播放中 True；任务点 1；播放器 1
+17:59:23  PASS：已确认起始视频任务完成，程序切换到“坚持以人民安全为宗旨的科学内涵”，且下一视频连续播放进度已前进至少2秒；验证已停止，不继续处理后续视频。
+17:59:23  PASS 实机播放与下一段切换验证通过。
+
+[live-v03-transition-02.txt]
+18:00:15  OBSERVE：坚持以人民安全为宗旨的科学内涵；进度 1:02 / 12:43；任务 Incomplete；播放中 True；任务点 1；播放器 1
+18:00:15  验证起点：4.1 坚持以人民安全为宗旨的科学内涵。将等待真实完成标记，并只验证一次程序切换。
+18:11:35  OBSERVE：坚持以人民安全为宗旨的科学内涵；进度 12:23 / 12:43；任务 Complete；播放中 True；任务点 1；播放器 1
+18:11:35  已确认完成 4.1 坚持以人民安全为宗旨的科学内涵；本次新完成 1 段。
+18:11:37  OBSERVE：坚持以人民安全为宗旨的科学内涵；进度 12:24 / 12:43；任务 Complete；播放中 True；任务点 1；播放器 1
+18:11:38  ACTION SCROLL：已核验目录滚轮；方向 向下；步长 120
+18:11:40  HIT MISS：phase=select1/3; target=4.2 新时代人民安全面临的风险挑战; role=Text; rect=1794,1044,305,28; point=1946,1138; reason=point-outside-live-target; hit=学生学习页面; hitRole=Document; hitRect=579,203,1620,1005
+18:11:40  HIT MISS：phase=select1/3; target=4.2 新时代人民安全面临的风险挑战; role=Text; rect=1794,1044,305,28; point=1802,1138; reason=point-outside-live-target; hit=4.3 新时代维护人民安全的途径和方法; hitRole=Custom; hitRect=1737,1088,438,61
+18:11:40  HIT MISS：phase=select1/3; target=4.2 新时代人民安全面临的风险挑战; role=Text; rect=1794,1044,305,28; point=1802,1131; reason=point-outside-live-target; hit=4.3 新时代维护人民安全的途径和方法; hitRole=Text; hitRect=1794,1104,305,28
+18:11:40  HIT MISS：phase=select1/3; target=4.2 新时代人民安全面临的风险挑战; role=Text; rect=1794,1044,305,28; point=1855,1138; reason=point-outside-live-target; hit=学生学习页面; hitRole=Document; hitRect=579,203,1620,1005
+18:11:41  HIT MISS：phase=select1/3; target=4.2 新时代人民安全面临的风险挑战; role=Text; rect=1794,1044,305,28; point=2038,1138; reason=point-outside-live-target; hit=4.3 新时代维护人民安全的途径和方法; hitRole=Custom; hitRect=1737,1088,438,61
+18:11:41  HIT MISS：phase=select1/3; target=4.2 新时代人民安全面临的风险挑战; role=Text; rect=1794,1044,305,28; point=1855,1129; reason=point-outside-live-target; hit=4.3 新时代维护人民安全的途径和方法; hitRole=Text; hitRect=1794,1104,305,28
+18:11:41  HIT MISS：phase=select1/3; target=4.2 新时代人民安全面临的风险挑战; role=Text; rect=1794,1044,305,28; point=1946,1129; reason=point-outside-live-target; hit=4.3 新时代维护人民安全的途径和方法; hitRole=Text; hitRect=1794,1104,305,28
+18:11:41  HIT MISS：phase=select1/3; target=4.2 新时代人民安全面临的风险挑战; role=Text; rect=1794,1044,305,28; point=2038,1129; reason=point-outside-live-target; hit=4.3 新时代维护人民安全的途径和方法; hitRole=Text; hitRect=1794,1104,305,28
+18:11:41  HIT MISS：phase=select1/3; target=4.2 新时代人民安全面临的风险挑战; role=Text; rect=1794,1044,305,28; point=1855,1146; reason=point-outside-live-target; hit=学生学习页面; hitRole=Document; hitRect=579,203,1620,1005
+18:11:41  HIT MISS：phase=select1/3; target=4.2 新时代人民安全面临的风险挑战; role=Text; rect=1794,1044,305,28; point=1946,1146; reason=point-outside-live-target; hit=学生学习页面; hitRole=Document; hitRect=579,203,1620,1005
+18:11:41  HIT MISS：phase=select1/3; target=4.2 新时代人民安全面临的风险挑战; role=Text; rect=1794,1044,305,28; point=2038,1146; reason=point-outside-live-target; hit=4.3 新时代维护人民安全的途径和方法; hitRole=Custom; hitRect=1737,1088,438,61
+18:11:42  HIT SELECT：target=4.2 新时代人民安全面临的风险挑战; point=1946,1058; attempt=2/3; strict=true
+18:11:42  HIT CONFIRM：phase=after-mouse; target=4.2 新时代人民安全面临的风险挑战; point=1946,1058; strict=true
+18:11:42  ACTION INPUT：已核验鼠标单击；4.2 新时代人民安全面临的风险挑战
+18:11:42  ACTION：程序已点击下一视频目录项“4.2 新时代人民安全面临的风险挑战”；等待播放进度证据。
+18:11:44  OBSERVE：新时代人民安全面临的风险挑战；进度 --:-- / --:--；任务 Incomplete；播放中 False；任务点 1；播放器 1
+18:11:47  OBSERVE：新时代人民安全面临的风险挑战；进度 --:-- / --:--；任务 Incomplete；播放中 False；任务点 1；播放器 1
+18:11:47  FRESH：连续两次完整读取已确认目标未完成任务与播放器重新加载；等待实际播放进度。
+18:11:47  HIT SELECT：target=播放视频; point=1363,900; attempt=1/3; strict=true
+18:11:47  ACTION INPUT：按钮 Invoke；播放视频
+18:11:49  OBSERVE：新时代人民安全面临的风险挑战；进度 0:00 / 15:31；任务 Incomplete；播放中 True；任务点 1；播放器 1
+18:12:00  OBSERVE：新时代人民安全面临的风险挑战；进度 0:11 / 15:31；任务 Incomplete；播放中 True；任务点 1；播放器 1
+18:12:00  PASS：已确认起始视频任务完成，程序切换到“新时代人民安全面临的风险挑战”，且下一视频连续播放进度已前进至少2秒；验证已停止，不继续处理后续视频。
+18:12:00  PASS 实机播放与下一段切换验证通过。
+
+[Normal GUI session-20261021-181241.log]
+18:13:22  已开始。学习通请保持前台；需要操作电脑时先停止助手。
+18:13:25  开始播放 4.2 新时代人民安全面临的风险挑战
+18:13:25  HIT SELECT：target=播放; point=781,1127; attempt=1/3; strict=true
+18:13:25  ACTION INPUT：按钮 Invoke；播放
+18:13:27  4.2 新时代人民安全面临的风险挑战  0:34 / 15:31；预计 877 秒后检查完成标记。
+18:13:56  已停止；学习通中的视频可能仍在继续播放。
+Actual Ctrl+Alt+F11 and Ctrl+Alt+F12 input acceptance: each 6/6; GUI received start/play and stop as recorded above.
+
+[Final verified pause]
+2026-10-21 18:14:11.652 BEFORE 新时代人民安全面临的风险挑战; Mark=Incomplete; Playing=True; Position=1:17
+2026-10-21 18:14:12.149 HIT SELECT：target=暂停; point=781,1127; attempt=1/3; strict=true
+2026-10-21 18:14:12.169 ACTION INPUT：按钮 Invoke；暂停
+2026-10-21 18:14:12.169 ACTION: 已通过生产驱动正常暂停一次；不会再次点击。
+2026-10-21 18:14:14.865 PASS: 同一课程与指定标题已暂停，任务仍Incomplete；只暂停一次。

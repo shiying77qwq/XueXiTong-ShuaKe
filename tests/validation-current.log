@@ -1,0 +1,201 @@
+﻿EXE SHA256: FD6DC7D686B5A334F5030949535C41F24F020EF92A78E541C9ECA33823B942D7
+Built: C:\Users\lenovo\.codex\visualizations\2026\10\15\01a13f74-04d6-7ec3-b415-1a4b233676b3\chaoxing-video-helper-work\StudyVideoHelper.exe
+PASS realistic study page parses current chapter and playback
+PASS choose first unfinished video and skip completed video
+PASS skip chapter already finished in this session
+PASS skip unfinished chapter tests with repeated same title
+PASS all videos complete leaves unfinished tests untouched
+PASS titles about discussion are still eligible videos
+PASS only explicit pending markers select a chapter
+PASS written unfinished marker is supported
+PASS positive multi-task marker is pending and never becomes the title
+PASS separate title action targets native text instead of blank row or task count
+PASS combined title action ignores same-named Custom wrappers
+PASS unnumbered intro action uses its unique title text
+PASS independent matching title texts reject the directory action
+PASS nested repeated title text chooses only the innermost match
+PASS zero unfinished-task marker is not pending
+PASS pending marker two does not permit playing a two-task page
+PASS nested single-section outer row is not duplicated
+PASS duplicate copies of same directory row are deduplicated
+PASS different numbered videos with the same title fail closed
+PASS nested duplicate document providers select innermost study page
+PASS two separate study pages are rejected as ambiguous
+PASS non-course home page has an actionable error
+PASS missing directory has an actionable error
+PASS ambiguous directories are rejected
+PASS empty directory is not success
+PASS explicit complete task point is read
+PASS nested repeated task accessible name is counted once
+PASS contradictory nested task states fail closed
+PASS two task points fail closed
+PASS unknown task point never becomes complete
+PASS task markers outside active iframe are ignored
+PASS two video players fail closed
+PASS missing player fails closed
+PASS paused player exposes a play action
+PASS read labelled clocks despite a subtitle containing another clock
+PASS missing current value cannot borrow the following duration
+PASS a duration label alone cannot enable two-clock fallback
+PASS a current label alone cannot enable two-clock fallback
+PASS subtitle before missing labelled current value cannot become position
+PASS missing duration value cannot borrow a later current value
+PASS a repeated time anchor cannot hide the first missing value
+PASS unlabelled player with exactly two times supports fallback
+PASS ambiguous unlabelled clocks fail closed
+PASS hour format is accepted
+PASS clock supports whitespace and long minutes
+PASS invalid clocks are rejected
+PASS zero total duration is not a loaded video
+PASS position beyond duration is invalid
+PASS first completion check is twenty seconds before end
+PASS last twenty seconds trigger immediate check
+PASS ended video triggers immediate check
+PASS invalid clocks cannot schedule a timer
+PASS course identity ignores progress changes
+PASS course identity changes if section list changes
+PASS session: early server completion still waits until last twenty seconds
+PASS session: near-end timer alone cannot switch before completion mark
+PASS session: near-end completion polls refresh the card without repeatedly reading the directory
+PASS session: cached light directory is checked again at the thirty-second audit
+PASS session: ended video without completion mark stops after bounded grace period
+PASS session: already completed video is neither replayed nor counted
+PASS session: skip completed first section then play unfinished section
+PASS session: starting in the middle never returns to earlier sections with stale pending counters
+PASS session: the final section does not wrap to earlier pending rows
+PASS session: a completed target with a reset player is skipped without playing
+PASS session: a completed target that still shows the old ending clock is not skipped
+PASS session: two completed pages with unknown metadata do not prove a new completed target
+PASS session: initial paused video can be started before duration is loaded
+PASS session: pause during playback safely stops without pressing play again
+PASS session: stalled progress safely stops
+PASS session: one erroneous total-time position recovers without poisoning the progress baseline
+PASS session: a completion mark paired with an impossible clock jump cannot advance chapters
+PASS session: temporarily missing current time can recover on the second full recheck
+PASS session: a persistent impossible forward jump stops after exactly two full rechecks
+PASS session: a persistent backward clock stops without accepting a new progress baseline
+PASS session: rechecking an anomalous clock does not extend a real stall deadline
+PASS session: normal progress during a slow UIA capture remains plausible
+PASS session: an old clock returned by a slow capture may catch up on the following fast capture
+PASS session: clock plausibility bounds elapsed progress, rollback, duration and finite values
+PASS session: course directory change stops the session
+PASS session: manual section change stops the session
+PASS session: player card identity change stops even with same title
+PASS session: unknown task state during playback stops
+PASS session: multiple players appearing during playback stops
+PASS session: stale card after navigation times out before any play action
+PASS session: reused native card identity permits a reset paused video to start
+PASS session: completed old page with unknown metadata can enter a new unloaded normal player
+PASS session: new title with an old complete mark cannot authorize playback
+PASS session: autoplaying target is conservatively refused before any play action
+PASS session: unknown next task state is never promoted to a fresh transition
+PASS session: ambiguous target tasks or players prevent transition play
+PASS session: transition freshness requires a genuine clock reset or fully unloaded metadata
+PASS session: transition freshness rejects nonfinite metadata and replay controls
+PASS session: start from chapter test safely requires an explicit video page
+PASS session: loss of target foreground stops promptly
+PASS session: stop request cancels a wait without any subsequent action
+PASS session: already cancelled session never captures or acts
+PASS session: different numbered videos sharing a title stop before any click
+SESSION RESULT 43 passed, 0 failed
+PASS real capture: the exact recorded UIA page parses without any AutomationIds
+PASS real capture: unnumbered intro has a stable title-only key
+PASS real capture: combined number and title is split without incorporating task count
+PASS real capture: recorded directory actions target title Text leaves rather than blank rows or counts
+PASS real capture: same-named real Custom wrappers do not replace a native title leaf
+PASS real capture: independent repeated title texts in a recorded blank row reject the action
+PASS real capture: chapter header rows and nested sublists are not duplicate sections
+PASS real capture: aggregate count two does not mean two active video task points
+PASS real capture: reading row with zero tasks is not pending
+PASS real capture: real big play button is recognized before metadata loads
+PASS real capture: active title node is the selected ListItem outside the directory
+PASS real capture: additional Custom wrappers preserve semantic recognition
+PASS real capture: a unique study document can be identified by directory and card structure
+PASS real capture: two separate learning documents are rejected
+PASS real capture: two independent equal-sized semantic directories are rejected
+PASS real capture: two semantic video cards do not become a single completed task
+PASS real capture: two players inside one real card fail closed
+PASS real capture: a named video card cannot hide an independent unnamed video document
+PASS real capture: real card time labels and pause-video name can be read after play
+PASS real capture: unrecognized task marker is never treated as completed
+PASS real capture: an extra task marker outside the video document cannot contaminate its status
+PASS real capture: multiple chapters with duplicate video titles still fail closed
+REAL CAPTURE RESULT 22 passed, 0 failed
+PASS verification: new completion then actual navigation and advancing next playback succeeds and stops before third
+PASS verification: already completed initial video is rejected with no action
+PASS verification: timer and video end without task completion cannot pass
+PASS verification: manual chapter change is not a program transition
+PASS verification: pause in next video never becomes a successful proof
+PASS verification: stalled next video cannot pass from just a title change
+PASS verification: fixed next clock cannot pass from just a nonzero time
+PASS verification: a single huge next clock jump cannot turn a stalled video into PASS
+PASS verification: next playback recovers from one clock spike and passes only on real progress
+PASS verification: persistent huge next clock jumps are rejected before proof succeeds
+PASS verification: next clock plausibility uses the latest accepted read rather than the first baseline
+PASS verification: an early clock from a slow capture permits the next fast read to catch up normally
+PASS verification: reused runtime identity passes only after a fresh task and advancing playback
+PASS verification: new title with old completed player metadata cannot pass
+PASS verification: incomplete mark and normal play button without a reset cannot pass
+PASS verification: one transient fresh observation is insufficient to confirm loading
+PASS verification: replacing next card after its playback baseline cannot pass
+PASS verification: cancellation during a successful progress capture takes priority
+PASS verification: user cancellation remains unsuccessful and never continues
+PASS verification: no remaining next video is incomplete verification
+PASS verification: course fingerprint change cannot bypass safety on successful observation
+PASS verification: completed next video cannot be skipped to a third by verifier
+PASS verification: completed directory rows are ignored before the sole verified target
+VERIFICATION RESULT 23 passed, 0 failed
+PASS bounded read: returns a normal result from a background MTA reader
+PASS bounded read: preserves the original provider exception
+PASS bounded read: pre-cancellation never starts the reader
+PASS bounded read: cancellation promptly returns while the provider remains blocked
+PASS bounded read: timeout promptly sets stop while the provider remains blocked
+PASS bounded read: cancellation raised by the completing reader takes priority over its result
+PASS bounded read: invalid timeout is rejected before invoking the reader
+BOUNDED READ RESULT 7 passed, 0 failed
+CORE RESULT 54 passed; total failures including session tests: 0
+PASS scroll geometry clips captured tall directory to its parent and application
+PASS scroll geometry intersects all three rectangles on both axes
+PASS scroll geometry rejects disjoint or merely touching viewports
+PASS scroll geometry rejects empty nonfinite and too-small viewports
+PASS scroll geometry orders an earlier target upward
+PASS scroll geometry orders a later target downward
+PASS scroll geometry refuses unknown or inconsistent chapter ordering
+PASS scroll geometry does not guess a direction inside the visible range
+PASS scroll geometry accepts a fully visible title with an integer interior point
+PASS scroll geometry rejects a top-clipped title even when its center is visible
+PASS scroll geometry rejects a bottom-clipped title even when its center is visible
+PASS scroll geometry rejects horizontal clipping offscreen and invalid titles
+SCROLL GEOMETRY RESULT 12 passed, 0 failed
+PASS strict hit geometry finite unique physical candidates stay inside title and viewport
+PASS strict hit geometry retains provider evidence and a small left glyph candidate
+PASS strict hit geometry does not trust out-of-bounds or nonfinite provider points
+PASS strict hit geometry refuses a title clipped by its allowed viewport
+PASS strict hit geometry refuses invalid rectangles and nonphysical coordinates
+PASS strict hit geometry deduplicates a small valid title without unbounded retries
+STRICT HIT GEOMETRY RESULT 6 passed, 0 failed
+PASS visible-window enumeration finds the exact fixture process
+PASS visible unowned tool windows are excluded from main-window candidates
+PASS visible unowned no-activate windows are excluded from main-window candidates
+PASS genuine multiple ordinary windows remain distinct candidates even without a title
+PASS standard MSAA client API reads the test-owned native fixture
+PASS Windows UIA subtree cache and localized button properties
+PASS non-course native window is rejected by the parser
+PASS starting restores a minimized target window
+PASS foreground native action accepted
+PASS native UIA play-button action invokes exactly once
+PASS stopped native driver cannot click
+PASS native strict hit fixture has actual center occlusion and a strict visible left title hit
+PASS native strict hit production search selects a strict inset without pointer input
+PASS native strict hit same-window opaque overlay rejects every candidate with zero input
+PASS native strict hit same-name Text overlay is not the target and produces zero input
+PASS native strict hit layout shift invalidates the selected point and permits fresh finite selection
+PASS native strict hit pre-cancelled selector never reads the allowed viewport
+PASS native strict hit cancellation after selection prevents final verification and input
+NATIVE STRICT HIT RESULT 7 passed, 0 failed, 0 foreground unavailable
+PASS GUI: start/stop button messages control a waiting session and restore toolbar state
+PASS GUI: stop button promptly cancels a blocked capture and permits restart
+PASS GUI: WM_HOTKEY F12 route cancels a blocked capture and restores ready state
+PASS GUI: verification button routes to the finite verifier and rejects a completed start without actions
+PASS GUI: closing the restarted form cancels its active session
+GUI RESULT 5 passed, 0 failed
